@@ -179,10 +179,10 @@ class MyFrame extends JFrame{
 		
 	}
 	
-	public void setBomb()//随机布雷方法
+	public void setBomb()//
 	{
 		//初始化雷区
-		BombPanel.removeAll();//移除雷区所有组件
+		BombPanel.removeAll();//
 		bomb = new Bomb[row][col];
 		BombPanel.setLayout(new GridLayout(row,col));
 		for(int i=0;i<row;i++)
@@ -248,8 +248,8 @@ class MyFrame extends JFrame{
 				});
 				BombPanel.add(bomb[i][j]);
 			}
-		blocknum = row * col;//方格数
-		leftbombnum = bombnum;//未标记地雷数
+		blocknum = row * col;//
+		leftbombnum = bombnum;//
 		leftblocknum = blocknum - bombnum;//未打开方格数
 		noflagbombnum.setText("未标记雷数 ："+leftbombnum);
 		weight = row * 20 + 70;//窗口高度
